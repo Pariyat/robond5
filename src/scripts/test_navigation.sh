@@ -1,5 +1,5 @@
 #!/bin/sh
-catkin_dir=~/robo-nd-ws/
+catkin_dir=$(pwd)
 catkin_src_dir=$catkin_dir/src
 
 xterm -e " roslaunch turtlebot_gazebo turtlebot_world.launch world_file:=$catkin_src_dir/worlds/mynewworld.world" &
